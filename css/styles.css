@@ -46,7 +46,11 @@ body{
     position: relative;
     font-weight: 500;
     color: white;
+    transition: color 0.3s;
+}
 
+.nav-menu li a:hover{
+    color: #e48f4a;
 }
 
 .hero-slider{
@@ -242,7 +246,198 @@ body{
     border-radius: 6px;
 }
 
+.reservation h2{
+    margin-bottom: 20px;
+}
+
 .reservation btn{
     border: none;
     cursor: pointer;
+}
+
+.review-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 60%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.review-card{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 1rem;
+    background-color: #fcfaf8;
+    border: 1px solid #aeaeae;
+    border-radius: 12px;
+}
+
+.review-header{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.review-info{
+    justify-content: flex-start;
+}
+
+.review-name{
+    color: #1b130e;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+
+.review-date{
+    color: #9c5b26;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.star-filled{
+    color: #e56e19;
+}
+
+.testimonials{
+    padding: 4rem 2rem;
+    background: #fdf6ef;
+    text-align: center;
+}
+
+.testimonials h2{
+    margin-bottom: 20px;
+}
+
+.review-stars{
+    display: flex;
+    gap: 2px;
+}
+
+.review-text span{
+    font-size: 3rem;
+    line-height: normal;
+}
+
+.contact{
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 1rem;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+}
+
+footer{
+    background: #222;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.socials{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.socials a{
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover{
+    color: #9c5b26;
+    cursor: pointer;
+}
+
+.menu-item-has-children{
+    position: relative;
+}
+
+.sub-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    width: max-content;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.menu-item-has-children:hover > .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #9c5b26;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top:hover{
+    background-color: #e48f4a;
+}
+
+.scroll-to-top.show{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
 }

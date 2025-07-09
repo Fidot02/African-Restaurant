@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -26,7 +27,15 @@
         <ul class="nav-menu">
             <li><a href="">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="">Locations</a></li>
+            <li class="menu-item-has-children">
+                <a href="">Locations</a>
+                <ul class="sub-menu">
+                    <li><a href="">Lekki</a></li>
+                    <li><a href="">Ikeja</a></li>
+                    <li><a href="">Victoria Island</a></li>
+                </ul>
+
+            </li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#reservation">Reservation</a></li>
         </ul>
@@ -111,6 +120,7 @@
         <a href="#" class="btn">View More</a>
     </section>
 
+    <!--Reservatino Section-->
     <section class="reservation" id="reservation">
         <h2>Make a Reservation</h2>
         <form action="">
@@ -128,18 +138,105 @@
         </form>
     </section>
 
+    <!--Testimonial Section-->
     <section class="testimonials">
+        <h2>What Our Guests Say</h2>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="review-header">
+                   <div class="avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHSLV3XiY_tKkB1BJ7GA7pqVm8ZFSTWzRtGs2BiiU3mARaM1BZMRTbLbXwS-hoH2KKd5Oonq7xW0vXjH8zBdOFWTNJ0r3KaVF1prkd6uSLFFMneOUIyObNqV_6OdqhQSafnwr722HBf5vjJc4NOER34YEhHxYKfu3KvbWthz4tqsrhBpQH7198aVZ65hJn_dKS2gG3nPr3SPh6DMo696CLBT00KEnnBfRStJ2oE0bGF0cEZnKgVv-5glQhlDnXFYmcKd-3czY5EdM');"></div>
+                    <div class="review-info">
+                        <p class="review-name">Aisha Mustapha</p>
+                        <p class="review-date">May 15, 2025</p>
+                    </div>
+                </div>
+                <div class="review-stars">
+                    <div class="star-filled">★</div>
+                    <div class="star-filled">★</div>
+                    <div class="star-filled">★</div>
+                    <div class="star-filled">★</div>
+                    <div class="star-filled">★</div>
+                </div>
+                <p class="review-text">
+                    <span>“</span>Absolutely stunning flavours and top tier service! I have never tasted anything like it.<span>”</span>
+                </p>
+            </div>
 
+        <div class="review-card">
+                <div class="review-header">
+                    <div class="avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDlqlLqTI8rmHyfTYeQgz6NFyLhUGP0xbXP21kUG55hFQFWJ29g_5u5Rf25GDQkVjURkS-SMRL3Zd8dQCmWzQ0NtHvE2kYuCAieaGYf0SyYOwtVP2xSAg0J3ljduvz8p9VseyP9Z7abavEVEqRv66AWE0IpInn_DNLAVPAwSgjTiTy0u4hnGsWu502piMd7-2pNtEr_q5vuO0dyh8gYErBPJ6DYfIfbSKxgXBnPHg7SUVe9SKjKHakHWpKcHYMZ5uXAXaIPIcUTMrI');"></div>
+                    <div class="review-info">
+                        <p class="review-name">Roger Joe</p>
+                        <p class="review-date">March 24, 2025</p>
+                    </div>
+                </div>
+                <div class="review-stars">
+                    <div class="star-filled">★</div>
+                    <div class="star-filled">★</div>
+                    <div class="star-filled">★</div>
+                    <div class="star-filled">★</div>
+                    <div class="star-filled">★</div>
+                </div>
+                <p class="review-text">
+                    <span>“</span>TasteBuds is a culinary gem. The flavours are bold and unique and the meal presentation is impeccable. A must try for any food enthusiast!<span>”</span>
+                </p>
+            </div>
+
+
+ <div class="review-card">
+                <div class="review-header">
+                   <div class="avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6erCoA7duEnx6Kl3JCVZODmfkr1WexdxUwMX8oAAQRqHl6VmmFCtOWQBHWOWBBfMYxvLgMORVjeZy21M2-qgNI_7fo-ceikS-jXGTf8OczUPhmUbS0R71QGJ642KZBTWot0HXSCZtpArua3BPWkbCDAUW0KqQUyLeAdHh37SxN81ja3rDuw5ArgxgY3B3RdFEr5tTBjO2r4UhSKkkV9_0Z5Q7G4K3UDxuK6lHRbkIcWZeKp-RbCvp4kq4pB2xxZsact1JLrpxrQg');"></div>
+                    <div class="review-info">
+                        <p class="review-name">Marcel Desailly</p>
+                        <p class="review-date">December 12, 2024</p>
+                    </div>
+                </div>
+                <div class="review-stars">
+                    <div class="star-filled">★</div>
+                    <div class="star-filled">★</div>
+                    <div class="star-filled">★</div>
+                    <div class="star-filled">★</div>
+                    <div class="star-filled">★</div>
+                </div>
+                <p class="review-text">
+                    <span>“</span>I really loved my dining experience at TasteBuds. The staff were friendly, the food was exquisite and the atmosphere was perfect<span>”</span>
+                </p>
+            </div>
+
+        </div>
     </section>
 
+    <!--Contact-->
     <section class="contact">
+        <h2>Visit Us</h2>
+        <p>Plot 1, Abojei Close, Ozumba Mbadiwe, Victoria Island, Lagos, Nigeria.</p>
+        <p>Email: contacts@tastebuds.com | Phone: +234 800 123 4567</p>
+        <p>Opens Daily: 9.00am - 11.00pm</p>
+
+        <iframe src="https://maps.google.com/maps?q=lagos&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
 
     </section>
+
 
     <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 TasteBuds Limited. All rights reserved.</p>
 
+             <div class="socials">
+            <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        </div>
+       
     </footer>
 
+    <button id="scrollTopBtn" class="scroll-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+  <path d="M12 4l-8 8h6v8h4v-8h6z"/>
+</svg>
+    </button>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts.js"></script>
 </body>
